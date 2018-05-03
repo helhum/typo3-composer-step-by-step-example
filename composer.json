@@ -1,7 +1,8 @@
 {
     "require": {
         "typo3/cms-core": "^8.7",
-        "helhum/typo3-secure-web": "^0.2.7"
+        "helhum/typo3-secure-web": "^0.2.7",
+        "typo3-console/composer-auto-setup": "^0.3.6"
     },
     "extra": {
         "typo3/cms": {

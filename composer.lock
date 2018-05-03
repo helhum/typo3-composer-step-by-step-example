@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7299c30fa988a06a03e4d5a32896d96a",
+    "content-hash": "c9b1a2aae59007f89db8d95f7bf88cfb",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -1513,6 +1513,48 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2018-04-08T08:49:08+00:00"
+        },
+        {
+            "name": "typo3-console/composer-auto-setup",
+            "version": "v0.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-Console/composer-auto-setup.git",
+                "reference": "ac8b56afad7d4a9b51f9fff184d134d011ce694c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-Console/composer-auto-setup/zipball/ac8b56afad7d4a9b51f9fff184d134d011ce694c",
+                "reference": "ac8b56afad7d4a9b51f9fff184d134d011ce694c",
+                "shasum": ""
+            },
+            "require": {
+                "helhum/typo3-composer-setup": "^0.5.1",
+                "helhum/typo3-console": "^5.0",
+                "php": ">=7.0 <7.3",
+                "typo3/cms-composer-installers": "^1.4.2 || ^2.0"
+            },
+            "suggest": {
+                "helhum/dotenv-connector": "Recommended for easily setting environment specific configuration in dev context",
+                "typo3-console/php-server-command": "Recommended for easy testing of your distribution in dev context without the needing a dedicated webserver"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Typo3Console\\ComposerAutoSetup\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Automatically set up TYPO3 on 'composer install' using TYPO3 Console commands",
+            "time": "2018-01-14T12:31:11+00:00"
         },
         {
             "name": "typo3/class-alias-loader",
