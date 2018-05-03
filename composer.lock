@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "058c2e2f7f8be021f355d9e9ff3c66b0",
+    "content-hash": "090ececd8f0de9626786bcf805e9828e",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -824,6 +824,63 @@
             ],
             "description": "Set up required entry points for TYPO3 web directory",
             "time": "2018-04-04T10:54:13+00:00"
+        },
+        {
+            "name": "helhum/typo3-secure-web",
+            "version": "v0.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/helhum/typo3-secure-web.git",
+                "reference": "79c916450a4c3ad19341fa6c8df5539a59179ad0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/helhum/typo3-secure-web/zipball/79c916450a4c3ad19341fa6c8df5539a59179ad0",
+                "reference": "79c916450a4c3ad19341fa6c8df5539a59179ad0",
+                "shasum": ""
+            },
+            "require": {
+                "helhum/typo3-composer-setup": "^0.5.0",
+                "typo3/cms-composer-installers": "^1.4 || ^2.0"
+            },
+            "conflict": {
+                "typo3/cms": "<8.7.8",
+                "typo3/cms-core": "<8.7.8"
+            },
+            "require-dev": {
+                "typo3-console/php-server-command": "^0.1.0",
+                "typo3/cms": "dev-TYPO3_8-7 as 8.7.8"
+            },
+            "type": "library",
+            "extra": {
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "root-dir": "typo3",
+                    "web-dir": "public"
+                },
+                "helhum/typo3-console": {
+                    "install-extension-dummy": "0"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Helhum\\Typo3SecureWeb\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Helmut Hummel",
+                    "email": "info@helhum.io",
+                    "homepage": "https://helhum.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Set up secure TYPO3 web directory containing only public assets",
+            "time": "2017-12-31T14:48:15+00:00"
         },
         {
             "name": "mso/idna-convert",
