@@ -2,7 +2,8 @@
     "require": {
         "typo3/cms-core": "^8.7",
         "helhum/typo3-secure-web": "^0.2.7",
-        "typo3-console/composer-auto-setup": "^0.3.6"
+        "typo3-console/composer-auto-setup": "^0.3.6",
+        "helhum/site-package": "@dev"
     },
     "extra": {
         "typo3/cms": {
@@ -13,5 +14,15 @@
     "require-dev": {
         "typo3-console/php-server-command": "^0.2.0",
         "helhum/dotenv-connector": "^2.0"
+    },
+    "repositories": {
+        "local": {
+            "type": "path",
+            "url": "packages/*"
+        },
+        "ter": {
+            "type": "composer",
+            "url": "https://composer.typo3.org/"
+        }
     }
 }
