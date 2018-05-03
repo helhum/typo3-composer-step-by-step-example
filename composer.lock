@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9b1a2aae59007f89db8d95f7bf88cfb",
+    "content-hash": "ae029301ebbb2362a46570160d5daff1",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -765,6 +765,33 @@
                 "url"
             ],
             "time": "2017-03-20T17:10:46+00:00"
+        },
+        {
+            "name": "helhum/site-package",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/helhum_site_package",
+                "reference": "8150c76595ac010e540118c9b6ff81e3e84c251c",
+                "shasum": null
+            },
+            "require": {
+                "php": ">=7.0 <7.3",
+                "typo3/cms-core": "^8.7"
+            },
+            "replace": {
+                "helhum_site_package": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "Helhum\\SitePackage\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "An example site package for Helhum TYPO3 Distribution"
         },
         {
             "name": "helhum/typo3-composer-setup",
@@ -2744,7 +2771,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "helhum/site-package": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
