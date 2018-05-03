@@ -3,7 +3,8 @@
         "typo3/cms-core": "^8.7",
         "helhum/typo3-secure-web": "^0.2.7",
         "typo3-console/composer-auto-setup": "^0.3.6",
-        "helhum/site-package": "@dev"
+        "helhum/site-package": "@dev",
+        "helhum/typo3-config-handling": "^0.6.1"
     },
     "extra": {
         "typo3/cms": {

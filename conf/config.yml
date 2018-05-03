@@ -1,2 +1,59 @@
 imports:
-    - { resource: 'DefaultConfiguration', type: typo3 }
+    - { resource: DefaultConfiguration, type: typo3 }
+
+BE:
+    explicitADmode: explicitAllow
+    installToolPassword: $pbkdf2-sha256$25000$WC7JKphCqosJk2iwlLZnOg$Tq6uzwvrcNlSt9zet6CQe1LaCcM2shMELUdpahw/SYc
+    loginSecurityLevel: normal
+DB:
+    Connections:
+        Default:
+            charset: utf8
+            dbname: test_autosetup_demo
+            driver: mysqli
+            host: localhost
+            password: ''
+            user: ''
+EXT:
+    extConf:
+        backend:
+            backendFavicon: ''
+            backendLogo: ''
+            loginBackgroundImage: ''
+            loginHighlightColor: ''
+            loginLogo: ''
+        extensionmanager:
+            automaticInstallation: '1'
+            offlineMode: '0'
+        rsaauth:
+            temporaryDirectory: ''
+        saltedpasswords:
+            BE:
+                saltedPWHashingMethod: TYPO3\CMS\Saltedpasswords\Salt\Pbkdf2Salt
+            FE:
+                enabled: 1
+                saltedPWHashingMethod: TYPO3\CMS\Saltedpasswords\Salt\Pbkdf2Salt
+        scheduler:
+            enableBELog: '1'
+            maxLifetime: '1440'
+            showSampleTasks: '1'
+            useAtdaemon: '0'
+FE:
+    loginSecurityLevel: rsa
+GFX:
+    jpg_quality: '80'
+    processor: GraphicsMagick
+    processor_effects: -1
+    processor_path: /usr/local/bin/
+    processor_path_lzw: /usr/local/bin/
+MAIL:
+    transport: sendmail
+    transport_sendmail_command: '/usr/sbin/sendmail -t -i '
+    transport_smtp_server: ''
+SYS:
+    devIPmask: ''
+    displayErrors: 0
+    enableDeprecationLog: false
+    encryptionKey: bc08cbb84fcbf984fb23f17e6bd889adc103d3ad60546592dad73ce95caf784f65e1b69ed8e4c3c0e9bf6ded144bdb81
+    sitename: 'New TYPO3 Console site'
+    systemLogLevel: 2

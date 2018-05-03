@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae029301ebbb2362a46570160d5daff1",
+    "content-hash": "e24e9ec02c7f9644225bdbf9bb2e1bcf",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -767,6 +767,50 @@
             "time": "2017-03-20T17:10:46+00:00"
         },
         {
+            "name": "helhum/config-loader",
+            "version": "v0.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/helhum/config-loader.git",
+                "reference": "056a0e5fe9c5bc41c9bde2ce93e437c9aa733f4f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/helhum/config-loader/zipball/056a0e5fe9c5bc41c9bde2ce93e437c9aa733f4f",
+                "reference": "056a0e5fe9c5bc41c9bde2ce93e437c9aa733f4f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0 <7.3.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^5.0",
+                "symfony/yaml": "^2.8 || ^3.3 || ^4.0"
+            },
+            "suggest": {
+                "ext-yaml": "For improved performance when parsing yaml files you should use the PECL YAML Parser php extension",
+                "symfony/yaml": "To be able to parse yaml files, you will need symfony/yaml"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Helhum\\ConfigLoader\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Generic config loader with context and environment support.",
+            "time": "2018-02-27T16:55:14+00:00"
+        },
+        {
             "name": "helhum/site-package",
             "version": "dev-master",
             "dist": {
@@ -851,6 +895,49 @@
             ],
             "description": "Set up required entry points for TYPO3 web directory",
             "time": "2018-04-04T10:54:13+00:00"
+        },
+        {
+            "name": "helhum/typo3-config-handling",
+            "version": "v0.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/helhum/typo3-config-handling.git",
+                "reference": "e0b6002a97014079be6eae1eb027829991df8667"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/helhum/typo3-config-handling/zipball/e0b6002a97014079be6eae1eb027829991df8667",
+                "reference": "e0b6002a97014079be6eae1eb027829991df8667",
+                "shasum": ""
+            },
+            "require": {
+                "helhum/config-loader": "^0.8",
+                "helhum/typo3-console": "^5.0.1",
+                "php": ">=7.0 <7.3",
+                "typo3-console/composer-auto-setup": "^0.3.5",
+                "typo3/cms-composer-installers": "^1.4.2 || ^2.0",
+                "typo3/cms-core": "^8.7"
+            },
+            "suggest": {
+                "typo3/cms-install": "If you want to update distribution configuration with Extension Manager or Install Tool UI"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Helhum\\TYPO3\\ConfigHandling\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Simple but powerful configuration handling for TYPO3 CMS",
+            "time": "2018-02-28T17:46:03+00:00"
         },
         {
             "name": "helhum/typo3-console",
