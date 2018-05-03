@@ -8,5 +8,9 @@
             "web-dir": "public",
             "root-dir": "private"
         }
+    },
+    "require-dev": {
+        "typo3-console/php-server-command": "^0.2.0",
+        "helhum/dotenv-connector": "^2.0"
     }
 }
